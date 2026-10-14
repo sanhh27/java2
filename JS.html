@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Quest | Mission Tracker</title>
+
+    <link rel="stylesheet" href="JS.css">
+</head>
+<body>
+
+    <main class="container">
+        <header class="header">
+            <p class="subtitle">YOUR PERSONAL PRODUCTIVITY HUB</p>
+            <h1>Campus <span>Quest</span></h1>
+            <p class="description">
+                Plan your goals. Complete your missions. Level up your day.
+            </p>
+        </header>
+
+        <section class="tracker">
+            <h2>Mission Tracker</h2>
+
+            <form id="missionForm">
+                <label for="missionInput">What is your next mission?</label>
+
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="missionInput"
+                        placeholder="Enter a mission..."
+                        autocomplete="off"
+                    >
+                    <button type="submit" id="addButton">
+                        + Add Mission
+                    </button>
+                </div>
+            </form>
+
+            <div class="mission-summary">
+                <span>Your missions</span>
+                <span class="counter">
+                    Total: <strong id="missionCount">0</strong>
+                </span>
+            </div>
+
+            <ul id="missionList" class="mission-list"></ul>
+
+            <p id="emptyMessage" class="empty-message">
+                No missions yet. 
+            </p>
+
+            <button type="button" id="colourButton" class="colour-button">
+                Change Background Colour
+            </button>
+        </section>
+
+        
+    </main>
+
+    <script src="JS.js"></script>
+</body>
+</html>
